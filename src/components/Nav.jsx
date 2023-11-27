@@ -66,7 +66,14 @@ const Nav = () => {
         <NavLink
           to="/aboutus"
           style={({ isActive }) => {
-            return {};
+            return {
+              borderRadius: "5px",
+              padding: "10px",
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "#ffffff" : "#000000",
+              textDecoration: "none",
+              background: isActive ? "#ed3604" : "none",
+            };
           }}
         >
           {content.About}
@@ -74,7 +81,14 @@ const Nav = () => {
         <NavLink
           to="/contactus"
           style={({ isActive }) => {
-            return {};
+            return {
+              borderRadius: "5px",
+              padding: "10px",
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "#ffffff" : "#000000",
+              textDecoration: "none",
+              background: isActive ? "#ed3604" : "none",
+            };
           }}
         >
           {content.Contact}
@@ -82,7 +96,14 @@ const Nav = () => {
         <NavLink
           to="/gallery"
           style={({ isActive }) => {
-            return {};
+            return {
+              borderRadius: "5px",
+              padding: "10px",
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "#ffffff" : "#000000",
+              textDecoration: "none",
+              background: isActive ? "#ed3604" : "none",
+            };
           }}
         >
           {content.Gallery}
@@ -90,7 +111,14 @@ const Nav = () => {
         <NavLink
           to="/ourcauses"
           style={({ isActive }) => {
-            return {};
+            return {
+              borderRadius: "5px",
+              padding: "10px",
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "#ffffff" : "#000000",
+              textDecoration: "none",
+              background: isActive ? "#ed3604" : "none",
+            };
           }}
         >
           {content.Causes}
