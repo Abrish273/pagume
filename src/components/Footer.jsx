@@ -10,7 +10,7 @@ const Footer = () => {
         backgroundColor: "#f0f0f0", // Add your desired background color
         padding: "25px"
     }}>
-        <Stack direction={"row"} justifyContent={"space-between"} sx={{
+        <Stack direction={{lg:"row", md:"row", sm:"column", xs:"column"}} justifyContent={"space-between"} sx={{
             padding:"25px"
         }}>
              <Stack>Copyright &copy; All Rights Reserved by Pagume 5</Stack>    
