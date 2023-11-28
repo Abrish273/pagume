@@ -22,8 +22,8 @@ const SharedLayout = () => {
       <Stack
         position={"fixed"}
         sx={{
-          top: "75%",
-          left: "2%",
+          top: {xs:"75%", sm:"75%",md:"90%", lg:"90%"},
+          right: {xs:"2%", sm:"2%",md:"5%", lg:"5%"},
           zIndex: 1,
           boxShadow: "1px 4px 8px 5px gray",
         }}

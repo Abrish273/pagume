@@ -11,9 +11,13 @@ import { useSelector } from "react-redux";
 import { selectLanguage } from "../features/LanguageSlice ";
 import Translation from "../Translation/Data.json";
 
-const StyledIcon = styled(Box)({
+const StyledIcon = styled(Stack)({
   transform: "scale(1.1)",
   transition: "transform 0.3s ease-in-out",
+  background:"#ffffff",
+  padding:"3px",
+  borderRadius: "13px",
+  alignItems: "center",
   "&:hover": {
     transform: "scale(1.2)",
     cursor: "pointer",
@@ -59,13 +63,13 @@ const Header = () => {
         <Stack direction={"row"} alignItems={"center"} gap={4}>
           <Stack direction={"row"} gap={1} alignItems={"center"}>
             <StyledIcon>
-              <Facebook sx={{ color: "pagumeColor.blue" }} />
+              <Facebook sx={{ color: "#000000" }} />
             </StyledIcon>
             <StyledIcon>
-              <YouTube sx={{ color: "pagumeColor.white" }} />
+              <YouTube sx={{ color: "#000000" }} />
             </StyledIcon>
             <StyledIcon>
-              <Telegram sx={{ color: "pagumeColor.blue" }} />
+              <Telegram sx={{ color: "#000000" }} />
             </StyledIcon>
           </Stack>
           <Button
